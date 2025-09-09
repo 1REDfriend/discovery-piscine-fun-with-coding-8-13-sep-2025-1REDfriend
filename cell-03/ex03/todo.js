@@ -1,6 +1,6 @@
 const ft_list = document.getElementById("ft_list");
 
-const COOKIE_EXPIRE = "Thu, 01 Jan 1970 00:00:00 UTC";
+const COOKIE_EXPIRE = "Thu, 01 Jan 2026 00:00:00 UTC";
 
 const deleteCookie = (key) => {
   document.cookie = `${key}=; expires=${COOKIE_EXPIRE};`;

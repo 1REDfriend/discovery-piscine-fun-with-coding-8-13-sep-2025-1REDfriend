@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.first-image, .second-image {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-image {
+  background-image: url("https://www.ggkeystore.com/cdn-cgi/image/fit=scale-down,w=1920,q=85,f=auto,anim=false,sharpen=0,onerror=redirect,metadata=none/storage/articles/gr67aJFJbJzwv05GtpUCvYMgZ62T9mNQTk3o2K8P.jpeg");
+}
+
+.second-image {
+  background-image: url("https://assets.teenvogue.com/photos/682df48b2bed78b375958e80/master/w_2560%2Cc_limit/Best%2520Animes%2520to%2520Stream.jpg");
+}
+
+h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.content {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #111;
+  font-size: 1.5rem;
+}

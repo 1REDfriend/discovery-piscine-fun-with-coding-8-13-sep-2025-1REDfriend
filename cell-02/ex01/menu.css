@@ -1,0 +1,23 @@
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.menu {
+  display: none;
+}
+
+.dropdown:hover .menu {
+  display: block;
+  background-color: antiquewhite;
+  padding: 5px;
+}
+
+.menu a {
+  display: block;
+}
+
+.text {
+  background-color: cadetblue;
+  padding:  3px;
+}

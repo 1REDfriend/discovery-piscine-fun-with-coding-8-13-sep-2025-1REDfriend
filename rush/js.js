@@ -37,8 +37,3 @@ function handleReveal() {
 }
 
 $(window).on("load scroll resize", handleReveal);
-
-$("#sendBtn").on("click", function () {
-    $("#sentNote").removeClass("hidden");
-    setTimeout(() => $("#sentNote").addClass("hidden"), 2500);
-});

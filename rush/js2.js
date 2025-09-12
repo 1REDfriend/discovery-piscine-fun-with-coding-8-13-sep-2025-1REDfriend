@@ -59,7 +59,9 @@
         function renderContact(person) {
             const c = normalizeContact(DATA.contact?.[person] || {});
             $("#emailP").text(c.email ? `Email : ${c.email}` : '');
+
             const $s = $("#socials").empty();
+
             const addIcon = (href, label, svg) => {
                 if (!href) return;
                 $s.append(
@@ -67,6 +69,7 @@
              href="${href}" target="_blank" rel="noopener" aria-label="${label}">${svg}</a>`
                 );
             };
+
             addIcon(c.instagram, 'Instagram', ICONS.instagram);
             addIcon(c.facebook, 'Facebook', ICONS.facebook);
             addIcon(c.intra, 'Profile/42 Intra', ICONS.link);

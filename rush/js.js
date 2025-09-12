@@ -10,14 +10,14 @@ $("#mobileMenu a").on("click", function () {
 });
 
 
-$("a[href^='#']").on("click", function (e) {
-    const target = $(this.getAttribute("href"));
-    if (target.length) {
-        e.preventDefault();
-        const offset = target.offset().top - 72;
-        $("html, body").stop().animate({ scrollTop: offset }, 500);
-    }
-});
+// $("a[href^='#']").on("click", function (e) {
+//     const target = $(this.getAttribute("href"));
+//     if (target.length) {
+//         e.preventDefault();
+//         const offset = target.offset().top - 72;
+//         $("html, body").stop().animate({ scrollTop: offset }, 500);
+//     }
+// });
 
 function handleReveal() {
     const vh = window.innerHeight || document.documentElement.clientHeight;

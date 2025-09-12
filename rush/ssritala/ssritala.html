@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chang Pa pa Team's (ทีมช่างปะปา)</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body class="text-slate-200">
+
+    <header id="navbar"
+        class="fixed inset-x-0 top-0 z-50 rounded-lg bg-[rgba(7,11,24,0.7)] backdrop-blur border-b border-slate-800 m-5">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="../index.html" class="flex items-center gap-2">
+                    <span class="inline-block w-2 h-6 bg-blue-500 rounded"></span>
+                    <span class="font-semibold tracking-wide">Chang Pa pa Team's (ทีมช่างปะปา)</span>
+                </a>
+
+                <nav class="hidden md:flex items-center gap-6 text-sm">
+                    <a href="#about" class="hover:text-blue-400">About</a>
+                    <a href="#showcase" class="hover:text-blue-400">Showcase</a>
+                    <a href="#contact" class="hover:text-blue-400">Contact</a>
+                    <a href="#top" class="ml-2 px-3 py-1.5 rounded bg-blue-600 hover:bg-blue-500 text-white">Top</a>
+                </nav>
+
+                <button id="burger" class="md:hidden" aria-label="Toggle navigation">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="md:hidden hidden border-t border-slate-800 bg-[rgba(7,11,24,0.9)]">
+            <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-3">
+                <a href="#about" class="hover:text-blue-400">About</a>
+                <a href="#showcase" class="hover:text-blue-400">Showcase</a>
+                <a href="#contact" class="hover:text-blue-400">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="top" class="pt-32 md:pt-28 pb-24">
+        <div id="topBg" class="absolute inset-0 bg-center bg-cover bg-no-repeat opacity-30 blur-lg"></div>
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="reveal">
+                    <h1 class="text-3xl md:text-5xl font-bold leading-tight">
+                        ทีมเล็ก ๆ 2 คนของ <span class="text-blue-400">$header_title_text1</span>
+                    </h1>
+                    <p class="pt-2">Chang Pa pa Team's (ทีมช่างปะปา)</p>
+                    <div class="mt-6 flex gap-3">
+                        <a href="#showcase" class="px-5 py-2 rounded bg-blue-600 hover:bg-blue-500">Showcase</a>
+                        <a href="#contact"
+                            class="px-5 py-2 rounded border border-slate-700 hover:border-slate-500">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <div class="rounded-2xl bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-800 p-6">
+                        <div class="grid grid-cols-2 gap-4">
+
+                            <button
+                                class="personBtn rounded-xl overflow-hidden border border-slate-800 hover:border-slate-600 btn-active"
+                                data-person="A" aria-label="เลือก A" disabled>
+                                <div class="avatar w-full rounded-xl overflow-hidden">
+                                    <img id="btnAImg" src="A.png" alt="Member A"
+                                        class="absolute inset-0 w-full h-full object-cover">
+                                    <div
+                                        class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,#1d4ed8,transparent_60%)]">
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 p-3">
+                                        <div class="text-sm text-slate-300">สมาชิก</div>
+                                        <div class="font-semibold text-slate-100">$header_title_text1</div>
+                                    </div>
+                                </div>
+                            </button>
+
+                            <button
+                                class="personBtn rounded-xl overflow-hidden border border-slate-800 hover:border-slate-600"
+                                data-person="B" aria-label="เลือก B">
+                                <div class="avatar w-full rounded-xl overflow-hidden">
+                                    <img id="btnBImg" src="B.png" alt="Member B"
+                                        class="absolute inset-0 w-full h-full object-cover">
+                                    <div
+                                        class="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,#1e40af,transparent_60%)]">
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 p-3">
+                                        <div class="text-sm text-slate-300">สมาชิก</div>
+                                        <div class="font-semibold text-slate-100">$header_title_text1</div>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <p class="mt-4 text-sm text-slate-400">กดรูปเพื่อสลับสมาชิก Chang Pa pa Team's (ทีมช่างปะปา)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-[var(--bg-darker)] border-t border-b border-slate-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-8 reveal">About</h2>
+
+            <div class="grid md:grid-cols-1 gap-6">
+                <article class="reveal card rounded-2xl border border-slate-800 bg-slate-900/40 p-6">
+                    <h3 class="font-semibold text-lg">$header_title_text1</h3>
+                    <p class="mt-4 text-slate-300">$about</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-end justify-between mb-8">
+                <h2 class="text-2xl md:text-3xl font-semibold reveal">Showcase</h2>
+                <a href="#contact" class="text-sm text-blue-400 hover:text-blue-300 reveal">อยากรู้เพิ่มเติมลองกดสิ
+                    →</a>
+            </div>
+
+            <div class="grid sm:grid-cols-1 lg:grid-cols-1 gap-6 justify-content-center content-center">
+                <article
+                    class="reveal card rounded-2xl border border-slate-800 bg-slate-900/40 max-w-[300px] overflow-hidden">
+                    <div class="h-40 bg-slate-800">
+                        <a id="certLink" href="#" target="_blank" rel="noopener">
+                            <img id="certImg" class="w-full h-40 object-cover" src="" alt="Certificate">
+                        </a>
+                    </div>
+
+                    <div class="p-5">
+                        <h3 class="font-semibold">Certificate</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="relative py-16 md:py-24 bg-[var(--bg-darker)] border-t border-slate-900">
+        <div id="contactBg" class="absolute inset-0 z-0 bg-center bg-cover bg-no-repeat opacity-70"></div>
+        <div class="relative mx-auto px-4 md:max-w-[50vw]">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-8 reveal">Contact</h2>
+            <div class="grid md:grid-cols-1 gap-8">
+                <div class="reveal rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+                    <h3 class="font-semibold mb-2">Other way contact</h3>
+
+                    <p id="emailP" class="text-slate-300 mb-3"></p>
+                    <div id="socials" class="flex items-center gap-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-slate-900 bg-[var(--bg-dark)]">
+        <div class="max-w-6xl mx-auto px-4 text-center text-slate-400 text-sm">
+            © <span id="year"></span> Chang Pa pa Team's (ทีมช่างปะปา). All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="js.js"></script>
+    <script src="js2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+    "header_title_text1": {
+        "A": "Supakorn Pipithgul",
+        "B": "Sarojphan Sritalalai"
+    },
+    "about": {
+        "A": "Supakorn Pipithgul นักศึกษาที่ชอบเรียนรู้ผ่านการลงมือทำ ตั้งแต่การจัดวางโครงสร้างเว็บ ไปจนถึงการทดลองเชื่อมต่ออุปกรณ์อย่าง ESP32 หรือการออกแบบฐานข้อมูลให้รองรับงานจริง จุดแข็งของฉันคืออะไร แล้วค่อยตัดสินใจเวลาว่างมักใช้ไปกับการเขียนโค้ดเล็ก ๆ เพื่อแก้ปัญหาเฉพาะหน้า ชอบอธิบายไอเดียให้เข้าใจง่าย และเชื่อว่าความเรียบง่าย คือพื้นฐานของงานคุณภาพ",
+        "B": "สวัสดีครับ ผมชื่อ ไม้ เป็นนักศึกษาคณะ IT สนใจงานด้าน IoT และพอมีพื้นฐานในการทำเว็บด้วย HTML, CSS, และ JavaScript เวลาว่างชอบเล่นเกมกับอ่านหนังสือ และกำลังพัฒนาทักษะด้าน Web Development ให้เก่งขึ้นเรื่อย ๆ"
+    },
+    "showcase": {
+        "A": "certA.png",
+        "B": "certB.png"
+    },
+    "contact": {
+        "A": {
+            "email": "67070175@kmitl.ac.th",
+            "instra": "https://instragram.com/_redfriend_",
+            "facebook": "https://www.facebook.com/re.xite.2024",
+            "intra": "https://profile-v3.intra.42.fr/users/supipith"
+        },
+        "B": {
+            "email": "67070181@kmitl.ac.th",
+            "instra": "https://www.instagram.com/sarojphan/",
+            "facebook": "https://www.facebook.com/sarojphan.sritalalai?locale=th_TH",
+            "intra": "https://profile-v3.intra.42.fr/users/ssritala"
+        }
+    },
+    "avatars": { "A": "A.jpg", "B": "B.jpg" }
+}

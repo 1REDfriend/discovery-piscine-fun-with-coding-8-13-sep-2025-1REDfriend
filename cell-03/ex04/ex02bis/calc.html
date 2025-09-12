@@ -37,7 +37,7 @@
     const num2 = parseFloat(event.target.num2.value);
     const operator = event.target.operator.value;
     let ans = 0;
-    if (isNaN(num1) || isNaN(num2)) {
+    if (isNaN(num1) || isNaN(num2) || !Number.isInteger(num1) || !Number.isInteger(num2)) {
       console.log("Error :(");
       alert("Error :(");
       return;
